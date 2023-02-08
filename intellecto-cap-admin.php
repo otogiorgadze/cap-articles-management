@@ -26,35 +26,6 @@ $pageParameter = 'page_id';
 include plugin_dir_path(__FILE__) . "cap-lib/lib-file1.php";
 
 
-function in_on_activate() {
-
-    global $wpdb;
-    WP_Filesystem();
-    global $wp_filesystem;
-
-    global $table_name_post_page;
-
-    $charset_collate = $wpdb->get_charset_collate();
-
-
-    $root = plugin_dir_path( __FILE__ );
-    $dir = "/deploy/sql/v".get_plugin_data( __FILE__ )['Version'];
-    $files = list_files($root.$dir);
-    usort($files, 'version_compare');
-
-    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-
-
-    foreach ($files as $file){
-        if(!is_readable($file)) {
-            echo 'File not found or not readable '.$file;
-        }
-        $sql_insert = $wp_filesystem->get_contents( $file );
-        dbDelta($sql_insert);
-    }
-}
-register_activation_hook( __FILE__, 'in_on_activate' );
-
 
 function dfn_register_dfncommpost_post_type() {
 
@@ -243,7 +214,7 @@ function post_variations(){
                       <h4 class="float-left">Post Variation <span class="name"></span><span class="id"></span><span class="status"></span></h4>
                       <button class="btn btn-success save_variation_template" type="button">Save Template</button>
                       <button class="btn btn-danger remove_variation" type="button">Remove Variation</button>
-                      <button class="btn btn-success saveVariation" disabled type="button">Save Variation</button>
+                      <button class="btn btn-success saveVariation d-none" disabled type="button">Save Variation</button>
                       <a href="#" class="d-inline-block relevant_post"><button class="btn btn-light" type="button">Edit Relevant Post Base</button></a>
                         <div class="heading_config mt-5">
                            <label for="exampleFormControlSelect">Post Config</label>

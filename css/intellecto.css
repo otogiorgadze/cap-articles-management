@@ -1,0 +1,545 @@
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+.over {
+    border-top: 2px solid blue;
+}
+div.baseBar {
+    position: fixed;
+    top: 40px;
+    float: right;
+}
+.in_dash label, input, textarea, .row.selection select {
+    width:100%;
+}
+.in_dash label:first-of-type{
+    margin: 0;
+}
+.float-left{
+    float:left;
+}
+.mr-2{
+    margin-right: 1rem;
+}
+.in_dash label{
+    margin-top: 30px;
+}
+.in_dash .holder, .opening_page{
+    margin: 20px 0;
+    border: 1px solid #c3c3c3;
+    padding: 5px 10px;
+}
+.in_dash .templates{
+    padding: 0 20px;
+}
+img.imgPrevDefault {
+    float: right;
+    max-height: 260px;
+    margin: 20px;
+    max-width: 90%;
+}
+.in_dash .templates .temp{
+    cursor: pointer;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px dashed #000;
+}
+.in_dash .templates .temp.active{
+    border:2px solid #000;
+}
+img.imgPrev {
+    max-width: 100%;
+    min-height: 225px;
+    height: 225px;
+    margin: 10px 15px 0;
+    float: right;
+}
+.post-meta-info {
+    color: #000;
+    font-weight: 500;
+}
+.in_dash label {
+    cursor: default !important;
+}
+.relevant_post {
+    position: fixed;
+    left: 10%;
+    top: 40px;
+}
+.pop_right_top{
+    top: 40px !important;
+    right: 3% !important;
+    position: fixed;
+}
+.variation_pop_up {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #aeaeaea1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.variation_pop_up .card {
+    width: 100%;
+    padding: 20px;
+}
+.variation_pop_up .card .card {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.relevant_post button.btn, .pop_right_top{
+    color: #FFF;
+    background-color: #0d6efd !important;
+}
+.in_dash .card{
+    justify-content: space-between;
+    flex-direction: row;
+}
+.in_dash a {
+    text-decoration: none;
+}
+.cont_template {
+    background-color: #FFF;
+    padding: 15px;
+    margin: 20px 0px;
+}
+.intellecto_page_post_variations .heading, .intellecto_page_post_variations .heading_bottom, .intellecto_page_post_variations .heading_content, .intellecto_page_post_variations .heading_config, .intellecto_page_post_variations .post_variation{
+    padding: 20px;
+    min-height: 65px;
+    margin: 20px 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.intellecto_page_post_variations button.btn.btn-danger.remove_variation {
+    margin-top: -5px !important;
+}
+.intellecto_page_post_variations form{
+    max-width: 1024px;
+    background-color: #dce4e9;
+    margin: 35px auto;
+    display: block;
+}
+.intellecto_page_post_variations form textarea {
+    min-height: 180px;
+}
+.intellecto_page_post_variations form select{
+    max-width: 100%;
+}
+.intellecto_page_post_variations .form-group{
+    padding: 15px;
+}
+.intellecto_page_post_variations .inactive{
+    display: none;
+}
+.intellecto_page_post_variations .st_select {
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.intellecto_page_post_variations .flex-center{
+    display: flex;
+    align-items: center;
+}
+.post_variation, .post_variation div, .in_dash .form_row div {
+    background-color: #dce4e9;
+}
+.yo_dash .holder {
+    background-color: #dce4e9;
+    padding: 20px;
+}
+.font-weight-bold {
+    font-weight: 600;
+}
+a.float-right{
+    float: right;
+}
+/*.post_variation .heading, .post_variation .heading_config, .post_variation .heading_content{*/
+/*    background-color:#FFF;*/
+/*}*/
+.intellecto_page_post_variations .heading_config:first-of-type {
+    /*margin-top: 50px;*/
+}
+.intellecto_page_post_variations .boxer .col-3{
+    float: right;
+}
+.back {
+    background-color: transparent !important;
+}
+button.page_end_ad {
+    float: right;
+    font-size: 14px;
+}
+label[for="exampleFormControlSelect"], label[for="exampleFormControlSelect2"]{
+    cursor: pointer !important;
+}
+.intellecto_page_post_variations .boxer button.btn.edit_page{
+    margin: auto 5px !important;
+}
+.intellecto_page_post_variations button.btn.btn-danger, .intellecto_page_post_variations .boxer button.btn {
+    display: flex;
+    font-size: 15px;
+    float: right;
+    margin: auto !important;
+    padding: 5px;
+}
+.toplevel_page_Intellecto .notice {
+    display: none;
+}
+.intellecto_page_post_variations .notice, .intellecto_page_post_variations .collapsed div, .intellecto_page_post_variations .collapsed button{
+    display: none !important;
+}
+.intellecto_page_post_variations .post_variation h4{
+    cursor: pointer;
+    font-size: 19px;
+    font-style: italic;
+}
+.intellecto_page_post_variations .post_variation h4:before, .intellecto_page_post_variations .post_variation label[for="exampleFormControlSelect2"]:before, .intellecto_page_post_variations .post_variation label[for="exampleFormControlSelect2"]:before, .intellecto_page_post_variations .heading_config label[for="exampleFormControlSelect"]:before, .intellecto_page_post_variations .heading_bottom label[for="exampleFormControlSelect2"]:before{
+    content: "- ";
+}
+.intellecto_page_post_variations .post_variation.collapsed h4:before, .intellecto_page_post_variations .post_variation .heading.collapsed label:before, .intellecto_page_post_variations .post_variation .heading_content.collapsed label:before, .intellecto_page_post_variations .heading_config.collapsed label:before, .intellecto_page_post_variations .heading_bottom.collapsed label:before {
+    content: "+ ";
+}
+.in_dash .holder, .in_dash .holder {
+    padding: 30px !important;
+}
+.in_dash .holder .title{
+    cursor: pointer;
+}
+.in_dash .holder:not(.collapsed) h5.title {
+    margin-bottom: 25px;
+}
+.in_dash .holder.collapsed :not(.title){
+    display: none;
+}
+.in_dash .holder .title:before {
+    content: "- ";
+}
+.in_dash .holder.collapsed .title:before {
+    content: "+ ";
+}
+.in_dash .expand-collapse-icon {
+    font-size: 34px;
+    height: 38px;
+    width: 49px;
+    display: inline-block;
+}
+.in_dash .expand-collapse-icon::before, .expand-collapse-icon::after {
+    content: "";
+    position: absolute;
+    width: .7em;
+    margin-left: -.27em;
+    height: .09em;
+    top: calc( (1em / 2 ));
+    background-color: #FFF;
+    transition: 0.3s ease-in-out all;
+    border-radius: 0.03em;
+}
+.in_dash .expand-collapse-icon::after {
+    transform: rotate(90deg);
+}
+.in_dash .collapsed.expand-collapse-icon::after {
+    transform: rotate(180deg);
+}
+.in_dash .collapsed.expand-collapse-icon::before {
+    transform: rotate(90deg) scale(0);
+}
+.opening_page textarea {
+    min-height: 150px;
+}
+label {
+    cursor: default !important;
+}
+span.status {
+    padding: 9px;
+    margin: 0px 0 -3px 10px;
+    display: inline-block;
+    border-radius: 100px;
+}
+.activeStat{
+    background-color: #198754;
+}
+.inactiveStat{
+    background-color: #dc3545;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin3D {
+    from {
+        transform: rotate3d(.5,.5,.5, 360deg);
+    }
+    to{
+        transform: rotate3d(0deg);
+    }
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes configure-xclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-225deg);
+    }
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: .25;
+        transform: scale(.75);
+    }
+}
+/* SPINNING CIRCLE */
+
+.leo-border-1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(63,249,220);
+    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+    animation: spin3D 1.8s linear 0s infinite;
+}
+
+.leo-core-1 {
+    width: 100%;
+    height: 100%;
+    background-color: #37474faa;
+    border-radius: 50%;
+}
+
+.leo-border-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(251, 91, 83);
+    background: linear-gradient(0deg, rgba(251, 91, 83, 0.1) 33%, rgba(251, 91, 83, 1) 100%);
+    animation: spin3D 2.2s linear 0s infinite;
+}
+
+.leo-core-2 {
+    width: 100%;
+    height: 100%;
+    background-color: #1d2630aa;
+    border-radius: 50%;
+}
+.spinner-box {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.solar-system {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orbit {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fafbfC;
+    border-radius: 50%;
+}
+
+.earth-orbit {
+    width: 165px;
+    height: 165px;
+    -webkit-animation: spin 12s linear 0s infinite;
+}
+
+.venus-orbit {
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 7.4s linear 0s infinite;
+}
+
+.mercury-orbit {
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 3s linear 0s infinite;
+}
+
+.planet {
+    position: absolute;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3ff9dc;
+}
+
+.sun {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffab91;
+}
+
+.leo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.blue-orbit {
+    width: 165px;
+    height: 165px;
+    border: 1px solid #91daffa5;
+    -webkit-animation: spin3D 3s linear .2s infinite;
+}
+
+.green-orbit {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #91ffbfa5;
+    -webkit-animation: spin3D 2s linear 0s infinite;
+}
+
+.red-orbit {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ffca91a5;
+    -webkit-animation: spin3D 1s linear 0s infinite;
+}
+
+.white-orbit {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ff9696;
+    -webkit-animation: spin3D 10s linear 0s infinite;
+}
+.close_pop{
+    cursor: pointer;
+}
+.w1 {
+    transform: rotate3D(1, 1, 1, 90deg);
+}
+
+.w2 {
+    transform: rotate3D(1, 2, .5, 90deg);
+}
+
+.w3 {
+    transform: rotate3D(.5, 1, 2, 90deg);
+}
+
+.three-quarter-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fb5b53;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin .5s linear 0s infinite;
+}
+button.save_variation_template, .saveVariation{
+    float: right;
+    margin-top: -5px;
+    font-size: 14.6px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+img.smallImg {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+.heading_content {
+    counter-reset: css-counter 0;
+}
+.form-group.dom_elm {
+    counter-increment: css-counter 1;
+}
+.form-group.shadow.my-2.dom_elm .box:before {
+    content: counter(css-counter);
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.validateEmpty {
+    border: 1px solid red !important;
+}
+.form_row{
+    counter-reset: css-counter 0;
+}
+.form_row .holder{
+    counter-increment: css-counter 1;
+}
+.form_row .holder h5:after{
+    content: ' - 'counter(css-counter);
+}
+/*MAX SCREEN SIZE 724PX*/
+/*@media only screen and (max-width: 724px) {*/
+/*    div[data-google-query-id] {*/
+/*        display: contents !important;*/
+/*    }*/
+/*}*/
